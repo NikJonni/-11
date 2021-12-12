@@ -16,7 +16,7 @@ namespace Задание_11
             Console.Write("Введите значение 'b' = ");
             double b1 = Convert.ToDouble(Console.ReadLine());
             Equation task11 = new Equation();
-            Console.Write("x = {0:f1}", task11.ToRoot(k1, b1));
+            Console.Write("x = {0:f1}", task11.Root(k1, b1));
             Console.ReadKey();
         }
         struct Equation
@@ -29,7 +29,7 @@ namespace Задание_11
                 this.b = b;
             }
 
-            public double ToRoot(double k, double b)
+            public double Root(double k, double b)
             {
                 double x = (b * (-1)) / k;
                 return x;
